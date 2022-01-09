@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="example_ecore_catframe" nsURI="http://www.example.org/example_ecore_catframe"
+    nsPrefix="example_ecore_catframe">
+  <eClassifiers xsi:type="ecore:EClass" name="H" eSuperTypes="#//Element"/>
+  <eClassifiers xsi:type="ecore:EClass" name="O" eSuperTypes="#//Element"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Element" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bindsTo" upperBound="-1"
+        eType="#//Element"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Molekül">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="element" lowerBound="2"
+        upperBound="-1" eType="#//Element" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExperimentalState">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="molekül" upperBound="-1"
+        eType="#//Molekül" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

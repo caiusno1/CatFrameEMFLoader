@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<example_ecore_catframe:ExperimentalState
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:example_ecore_catframe="http://www.example.org/example_ecore_catframe"
+    xsi:schemaLocation="http://www.example.org/example_ecore_catframe example_ecore_catframe.ecore">
+  <molekül>
+    <element
+        xsi:type="example_ecore_catframe:H"
+        bindsTo="//@molekül.0/@element.1"/>
+    <element
+        xsi:type="example_ecore_catframe:H"
+        bindsTo="//@molekül.0/@element.0"/>
+  </molekül>
+  <molekül>
+    <element
+        xsi:type="example_ecore_catframe:O"
+        bindsTo="//@molekül.1/@element.1"/>
+    <element
+        xsi:type="example_ecore_catframe:O"
+        bindsTo="//@molekül.1/@element.0"/>
+  </molekül>
+  <molekül>
+    <element
+        xsi:type="example_ecore_catframe:H"
+        bindsTo="//@molekül.2/@element.1"/>
+    <element
+        xsi:type="example_ecore_catframe:H"
+        bindsTo="//@molekül.2/@element.0"/>
+  </molekül>
+</example_ecore_catframe:ExperimentalState>
