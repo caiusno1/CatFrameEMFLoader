@@ -1,2 +1,2 @@
-import { EMFLoader } from './EMFLoader';
+import { EMFLoader } from './main/EMFLoader';
 export { EMFLoader };
