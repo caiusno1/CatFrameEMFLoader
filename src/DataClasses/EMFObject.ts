@@ -5,4 +5,7 @@ export class EMFObject{
     compare(a: EMFObject):boolean{
         return a.id === this.id
     }
+    toString(){
+        return this.name
+    }
 }
